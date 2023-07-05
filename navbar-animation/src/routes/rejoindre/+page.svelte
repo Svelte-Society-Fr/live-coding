@@ -1,40 +1,34 @@
-<!-- Donate.svelte -->
-<script>
+<script lang="ts">
 	let donationAmount = 0;
 
 	function handleDonate() {
-		// Logic to process the donation goes here
-		// You can use the donationAmount variable to access the selected amount
-		// and send it to your backend for further processing
 		console.log('Donation amount:', donationAmount);
 	}
 </script>
 
-<main>
-	<h1>Donate</h1>
+<h1>Donate</h1>
 
-	<p>Select an amount to donate:</p>
-	<div>
-		<label>
-			<input type="radio" bind:group={donationAmount} value="10" />
-			$10
-		</label>
-	</div>
-	<div>
-		<label>
-			<input type="radio" bind:group={donationAmount} value="20" />
-			$20
-		</label>
-	</div>
-	<div>
-		<label>
-			<input type="radio" bind:group={donationAmount} value="50" />
-			$50
-		</label>
-	</div>
+<p>Select an amount to donate:</p>
+<div>
+	<label>
+		<input type="radio" bind:group={donationAmount} value="10" />
+		$10
+	</label>
+</div>
+<div>
+	<label>
+		<input type="radio" bind:group={donationAmount} value="20" />
+		$20
+	</label>
+</div>
+<div>
+	<label>
+		<input type="radio" bind:group={donationAmount} value="50" />
+		$50
+	</label>
+</div>
 
-	<button on:click={handleDonate}>Donate</button>
-</main>
+<button on:click={handleDonate}>Donate</button>
 
 <style>
 	main {

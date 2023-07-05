@@ -1,22 +1,19 @@
-<!-- Team.svelte -->
-<main>
-	<h1>Our Team</h1>
+<h1>Our Team</h1>
 
-	<ul>
-		<li>
-			<h2>John Doe</h2>
-			<p>CEO</p>
-		</li>
-		<li>
-			<h2>Jane Smith</h2>
-			<p>COO</p>
-		</li>
-		<li>
-			<h2>David Johnson</h2>
-			<p>CTO</p>
-		</li>
-	</ul>
-</main>
+<ul>
+	<li>
+		<h2>John Doe</h2>
+		<p>CEO</p>
+	</li>
+	<li>
+		<h2>Jane Smith</h2>
+		<p>COO</p>
+	</li>
+	<li>
+		<h2>David Johnson</h2>
+		<p>CTO</p>
+	</li>
+</ul>
 
 <style>
 	main {
